@@ -32,7 +32,7 @@ define Package/alsa-lib
   CATEGORY:=Libraries
   TITLE:=ALSA (Advanced Linux Sound Architecture) library
   URL:=http://www.alsa-project.org/
-  DEPENDS:=@AUDIO_SUPPORT $(DEPENDS_KMOD) +USE_EGLIBC:librt +USE_EGLIBC:libpthread
+  DEPENDS:=@AUDIO_SUPPORT $(DEPENDS_KMOD) +librt +libpthread
 endef
 
 define Package/alsa-lib/description
