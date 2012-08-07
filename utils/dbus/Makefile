@@ -44,6 +44,7 @@ define Package/libdbus
 $(call Package/dbus/Default)
   CATEGORY:=Libraries
   TITLE+= (library)
+  DEPENDS:= +librt +libpthread
 endef
 
 define Package/libdbus/Description
