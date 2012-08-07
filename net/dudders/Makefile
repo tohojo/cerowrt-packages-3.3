@@ -28,6 +28,7 @@ define Package/dudders
   TITLE:=DNS Update SIG(0) client
   MAINTAINER:=Dean Scarff <dos@scarff.id.au>
   URL:=http://dudders.sourceforge.net/
+  DEPENDS:= +libgcrypt +libopenssl
 endef
 
 define Package/dudders/description
