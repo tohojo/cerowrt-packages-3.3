@@ -23,6 +23,7 @@ define Package/libusb-1.0
   CATEGORY:=Libraries
   TITLE:=libusb-1.0
   URL:=http://libusb.wiki.sourceforge.net/
+  DEPENDS:= +librt +libpthread
 endef
 
 define Package/libusb-1.0/description
