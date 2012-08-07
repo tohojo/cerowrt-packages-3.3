@@ -44,6 +44,7 @@ endef
 define Package/krb5-client
 	$(call Package/krb5/Default)
 	TITLE:=Kerberos 5 Client
+	DEPENDS:=+krb5-libs
 endef
 
 define Package/krb5/decription
