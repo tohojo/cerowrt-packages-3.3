@@ -94,7 +94,7 @@ endef
 define Package/avahi-daemon
   $(call Package/avahi/Default)
   SUBMENU:=IP Addresses and Names
-  DEPENDS:=+libavahi +libexpat
+  DEPENDS:=+libavahi +libexpat +libcap +libdbus +librt
   TITLE+= (daemon)
 endef
 
