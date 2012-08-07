@@ -30,7 +30,7 @@ endef
 define Package/fcgi
   $(call Package/fcgi/Default)
   MENU:=1
-  DEPENDS:= +libpthread
+  DEPENDS:= +libpthread +USE_UCLIBC:uclibcxx
   TITLE:=Shared library of FastCGI
 endef
 
