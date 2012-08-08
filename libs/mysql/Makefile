@@ -54,6 +54,7 @@ endef
 define Package/libmysqlclient_r
   $(call Package/libmysqlclient/Default)
   TITLE += threadsafe
+  DEPENDS:= +libpthread
 endef
 
 TARGET_CXX=g++-uc
