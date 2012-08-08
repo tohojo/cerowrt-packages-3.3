@@ -293,7 +293,7 @@ endef
 define Package/strongswan4-libfast
 $(call Package/strongswan4/Default)
   TITLE+= libfast
-  DEPENDS:= +strongswan4
+  DEPENDS:= +strongswan4 +fcgi +zlib
 endef
 
 define Package/strongswan4-libfast/description
@@ -474,7 +474,7 @@ $(eval $(call BuildPlugin,load-tester,load testing,))
 $(eval $(call BuildPlugin,md5,MD5 crypto,))
 $(eval $(call BuildPlugin,medcli,mediation client configuration database,))
 $(eval $(call BuildPlugin,medsrv,mediation server configuration database,))
-$(eval $(call BuildPlugin,mysql,MySQL database interface,+strongswan4-mod-sql +PACKAGE_strongswan4-mod-mysql:libmysqlclient))
+$(eval $(call BuildPlugin,mysql,MySQL database interface,+strongswan4-mod-sql +PACKAGE_strongswan4-mod-mysql:libmysqlclient_r))
 $(eval $(call BuildPlugin,padlock,VIA PadLock crypto,@TARGET_x86))
 $(eval $(call BuildPlugin,pem,PEM decoding,))
 $(eval $(call BuildPlugin,pgp,PGP key decoding,))
